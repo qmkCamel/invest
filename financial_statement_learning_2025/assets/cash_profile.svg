@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-label="非金融企业现金画像">
+<rect x="0.0" y="0.0" width="1200.0" height="680.0" rx="0.0" fill="#F7F5F0" stroke="none" stroke-width="0" />
+<text x="60.0" y="65.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="700" fill="#182026" text-anchor="start">四类非金融企业的现金画像</text>
+<text x="60.0" y="98.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" fill="#667078" text-anchor="start">现金转化率看利润含金量；资本开支强度看维持和扩张需要多少再投资。</text>
+<rect x="70.0" y="155.0" width="500.0" height="360.0" rx="18.0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<text x="94.0" y="195.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="650" fill="#182026" text-anchor="start">现金转化率（倍）</text>
+<text x="94.0" y="262.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">贵州茅台</text>
+<rect x="200.0" y="243.0" width="103.1" height="28.0" rx="6.0" fill="#0F766E" stroke="none" stroke-width="0" />
+<text x="546.0" y="264.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">0.75x</text>
+<text x="94.0" y="328.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">美的集团</text>
+<rect x="200.0" y="309.0" width="166.4" height="28.0" rx="6.0" fill="#D97706" stroke="none" stroke-width="0" />
+<text x="546.0" y="330.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">1.21x</text>
+<text x="94.0" y="394.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">中国神华</text>
+<rect x="200.0" y="375.0" width="195.2" height="28.0" rx="6.0" fill="#2563EB" stroke="none" stroke-width="0" />
+<text x="546.0" y="396.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">1.42x</text>
+<text x="94.0" y="460.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">宁德时代</text>
+<rect x="200.0" y="441.0" width="254.4" height="28.0" rx="6.0" fill="#7C3AED" stroke="none" stroke-width="0" />
+<text x="546.0" y="462.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">1.85x</text>
+<rect x="630.0" y="155.0" width="500.0" height="360.0" rx="18.0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<text x="654.0" y="195.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="650" fill="#182026" text-anchor="start">资本开支强度（%）</text>
+<text x="654.0" y="262.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">贵州茅台</text>
+<rect x="760.0" y="243.0" width="20.0" height="28.0" rx="6.0" fill="#0F766E" stroke="none" stroke-width="0" />
+<text x="1106.0" y="264.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">5.1%</text>
+<text x="654.0" y="328.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">美的集团</text>
+<rect x="760.0" y="309.0" width="82.1" height="28.0" rx="6.0" fill="#D97706" stroke="none" stroke-width="0" />
+<text x="1106.0" y="330.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">20.9%</text>
+<text x="654.0" y="394.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">中国神华</text>
+<rect x="760.0" y="375.0" width="253.4" height="28.0" rx="6.0" fill="#2563EB" stroke="none" stroke-width="0" />
+<text x="1106.0" y="396.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">64.5%</text>
+<text x="654.0" y="460.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">宁德时代</text>
+<rect x="760.0" y="441.0" width="124.9" height="28.0" rx="6.0" fill="#7C3AED" stroke="none" stroke-width="0" />
+<text x="1106.0" y="462.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="650" fill="#182026" text-anchor="end">31.8%</text>
+<text x="70.0" y="565.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" fill="#667078" text-anchor="start">注：现金转化率=经营现金流/归母净利润</text>
+<text x="70.0" y="589.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" fill="#667078" text-anchor="start">资本开支强度=购建长期资产现金支出/经营现金流</text>
+<text x="70.0" y="613.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" fill="#667078" text-anchor="start">茅台经营现金流受财务公司影响；神华公司披露资本开支口径与现金流口径存在差异</text>
+</svg>

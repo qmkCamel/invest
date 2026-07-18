@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-label="中国神华">
+<rect x="0.0" y="0.0" width="1200.0" height="680.0" rx="0.0" fill="#F7F5F0" stroke="none" stroke-width="0" />
+<text x="60.0" y="65.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="700" fill="#182026" text-anchor="start">中国神华：2023-2025财务学习仪表板</text>
+<text x="60.0" y="98.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" fill="#667078" text-anchor="start">先看趋势，再解释变化；不要只盯某一个增长率。</text>
+<rect x="70.0" y="155.0" width="650.0" height="350.0" rx="18.0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<text x="94.0" y="195.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="650" fill="#182026" text-anchor="start">三年趋势（2023=100）</text>
+<line x1="140.0" y1="235.0" x2="690.0" y2="235.0" stroke="#D8D4CC" stroke-width="1" />
+<text x="125.0" y="241.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" fill="#667078" text-anchor="end">140</text>
+<line x1="140.0" y1="290.0" x2="690.0" y2="290.0" stroke="#D8D4CC" stroke-width="1" />
+<text x="125.0" y="296.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" fill="#667078" text-anchor="end">120</text>
+<line x1="140.0" y1="345.0" x2="690.0" y2="345.0" stroke="#D8D4CC" stroke-width="1" />
+<text x="125.0" y="351.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" fill="#667078" text-anchor="end">100</text>
+<line x1="140.0" y1="400.0" x2="690.0" y2="400.0" stroke="#D8D4CC" stroke-width="1" />
+<text x="125.0" y="406.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" fill="#667078" text-anchor="end">80</text>
+<line x1="140.0" y1="455.0" x2="690.0" y2="455.0" stroke="#D8D4CC" stroke-width="1" />
+<text x="125.0" y="461.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" fill="#667078" text-anchor="end">60</text>
+<text x="195.0" y="481.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#667078" text-anchor="middle">2023</text>
+<text x="405.0" y="481.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#667078" text-anchor="middle">2024</text>
+<text x="615.0" y="481.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#667078" text-anchor="middle">2025</text>
+<polyline points="195.0,345.0 405.0,349.9 615.0,385.6" fill="none" stroke="#0F766E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="195.0" cy="345.0" r="6" fill="#0F766E" />
+<text x="195.0" y="331.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F766E" text-anchor="middle">346.0</text>
+<circle cx="405.0" cy="349.9" r="6" fill="#0F766E" />
+<text x="405.0" y="369.9" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F766E" text-anchor="middle">339.8</text>
+<circle cx="615.0" cy="385.6" r="6" fill="#0F766E" />
+<text x="615.0" y="405.6" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#0F766E" text-anchor="middle">294.9</text>
+<rect x="100.0" y="543.0" width="18.0" height="5.0" rx="2.0" fill="#0F766E" stroke="none" stroke-width="0" />
+<text x="128.0" y="553.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">营业收入</text>
+<polyline points="195.0,345.0 405.0,354.3 615.0,368.4" fill="none" stroke="#D97706" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="195.0" cy="345.0" r="6" fill="#D97706" />
+<text x="195.0" y="313.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#D97706" text-anchor="middle">57.8</text>
+<circle cx="405.0" cy="354.3" r="6" fill="#D97706" />
+<text x="405.0" y="338.3" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#D97706" text-anchor="middle">55.8</text>
+<circle cx="615.0" cy="368.4" r="6" fill="#D97706" />
+<text x="615.0" y="352.4" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#D97706" text-anchor="middle">52.8</text>
+<rect x="290.0" y="543.0" width="18.0" height="5.0" rx="2.0" fill="#D97706" stroke="none" stroke-width="0" />
+<text x="318.0" y="553.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">归母净利润</text>
+<polyline points="195.0,345.0 405.0,341.5 615.0,390.5" fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="195.0" cy="345.0" r="6" fill="#2563EB" />
+<text x="195.0" y="295.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#2563EB" text-anchor="middle">90.0</text>
+<circle cx="405.0" cy="341.5" r="6" fill="#2563EB" />
+<text x="405.0" y="361.5" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#2563EB" text-anchor="middle">91.1</text>
+<circle cx="615.0" cy="390.5" r="6" fill="#2563EB" />
+<text x="615.0" y="410.5" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="600" fill="#2563EB" text-anchor="middle">75.1</text>
+<rect x="480.0" y="543.0" width="18.0" height="5.0" rx="2.0" fill="#2563EB" stroke="none" stroke-width="0" />
+<text x="508.0" y="553.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="500" fill="#182026" text-anchor="start">经营现金流</text>
+<rect x="760.0" y="155.0" width="370.0" height="430.0" rx="18.0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<text x="784.0" y="195.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="650" fill="#182026" text-anchor="start">2025年分部毛利率</text>
+<text x="784.0" y="253.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="500" fill="#182026" text-anchor="start">煤炭</text>
+<rect x="860.0" y="237.0" width="132.1" height="22.0" rx="5.0" fill="#0F766E" stroke="none" stroke-width="0" />
+<text x="1106.0" y="254.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="650" fill="#182026" text-anchor="end">30.1%</text>
+<text x="784.0" y="306.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="500" fill="#182026" text-anchor="start">发电</text>
+<rect x="860.0" y="290.0" width="79.0" height="22.0" rx="5.0" fill="#D97706" stroke="none" stroke-width="0" />
+<text x="1106.0" y="307.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="650" fill="#182026" text-anchor="end">18.0%</text>
+<text x="784.0" y="359.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="500" fill="#182026" text-anchor="start">铁路</text>
+<rect x="860.0" y="343.0" width="166.4" height="22.0" rx="5.0" fill="#2563EB" stroke="none" stroke-width="0" />
+<text x="1106.0" y="360.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="650" fill="#182026" text-anchor="end">37.9%</text>
+<text x="784.0" y="412.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="500" fill="#182026" text-anchor="start">港口</text>
+<rect x="860.0" y="396.0" width="205.0" height="22.0" rx="5.0" fill="#7C3AED" stroke="none" stroke-width="0" />
+<text x="1106.0" y="413.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="650" fill="#182026" text-anchor="end">46.7%</text>
+<text x="784.0" y="465.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="500" fill="#182026" text-anchor="start">航运</text>
+<rect x="860.0" y="449.0" width="50.5" height="22.0" rx="5.0" fill="#BE123C" stroke="none" stroke-width="0" />
+<text x="1106.0" y="466.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="650" fill="#182026" text-anchor="end">11.5%</text>
+<text x="784.0" y="518.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="500" fill="#182026" text-anchor="start">煤化工</text>
+<rect x="860.0" y="502.0" width="31.6" height="22.0" rx="5.0" fill="#4D7C0F" stroke="none" stroke-width="0" />
+<text x="1106.0" y="519.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="650" fill="#182026" text-anchor="end">7.2%</text>
+<text x="70.0" y="620.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" fill="#667078" text-anchor="start">注：金额单位：十亿元；分部毛利率：%</text>
+<text x="70.0" y="644.0" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" fill="#667078" text-anchor="start">2023-2024数据按年报重述口径</text>
+</svg>
