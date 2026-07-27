@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>嘉立创业务分析图表</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --paper: #f6f3ec;
+      --ink: #16222d;
+      --muted: #6f756f;
+      --line: #d9d4c9;
+      --blue: #2867d6;
+      --teal: #168b83;
+      --orange: #eb8c3a;
+      --rose: #d95c7c;
+      --purple: #7869d6;
+      --green: #5aaf75;
+      --soft-blue: #e2ebf8;
+      --soft-teal: #dfeeea;
+      --soft-orange: #f7e8d7;
+      --soft-rose: #f4e0e6;
+      --soft-purple: #e9e5f6;
+      --soft-green: #e1efe5;
+      --dark: #17314c;
+    }
+    html, body {
+      margin: 0;
+      background: #d7d4cd;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+    }
+    body { width: 1440px; }
+    .page {
+      position: relative;
+      width: 1440px;
+      height: 810px;
+      overflow: hidden;
+      padding: 60px 72px 52px;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(40,103,214,.06), transparent 34%),
+        var(--paper);
+      margin: 0 0 32px;
+    }
+    .page::after {
+      content: "";
+      position: absolute;
+      left: 72px;
+      right: 72px;
+      bottom: 34px;
+      height: 1px;
+      background: var(--line);
+    }
+    .page.dark {
+      background:
+        radial-gradient(circle at 85% 15%, rgba(49,143,155,.23), transparent 32%),
+        radial-gradient(circle at 10% 90%, rgba(40,103,214,.20), transparent 36%),
+        #132a41;
+      color: #f7f4ec;
+    }
+    .page.dark::after { background: rgba(255,255,255,.16); }
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: .16em;
+    }
+    .dark .kicker { color: #73d6ca; }
+    .kicker::before {
+      content: "";
+      width: 30px;
+      height: 3px;
+      border-radius: 3px;
+      background: currentColor;
+    }
+    h1 {
+      margin: 0;
+      max-width: 1110px;
+      font-size: 43px;
+      line-height: 1.2;
+      font-weight: 650;
+      letter-spacing: -.03em;
+    }
+    .sub {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.55;
+    }
+    .dark .sub { color: rgba(247,244,236,.66); }
+    .source {
+      position: absolute;
+      z-index: 2;
+      right: 72px;
+      bottom: 13px;
+      color: #858980;
+      font-size: 14px;
+    }
+    .dark .source { color: rgba(255,255,255,.48); }
+    .hairline { border-color: var(--line); }
+    .value { font-variant-numeric: tabular-nums; }
+    .muted { color: var(--muted); }
+
+    /* business loop */
+    .workflow {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .step {
+      position: relative;
+      min-height: 236px;
+      padding: 28px 24px 22px;
+      border: 1px solid rgba(255,255,255,.17);
+      border-radius: 18px;
+      background: rgba(255,255,255,.055);
+    }
+    .step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      z-index: 3;
+      top: 93px;
+      right: -28px;
+      color: #73d6ca;
+      font-size: 29px;
+      font-weight: 500;
+    }
+    .step-no {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 28px;
+      border-radius: 50%;
+      color: #10263a;
+      background: #73d6ca;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .step h2 {
+      margin: 0 0 10px;
+      font-size: 27px;
+      font-weight: 600;
+    }
+    .step p {
+      margin: 0;
+      color: rgba(247,244,236,.62);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .loop-bottom {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 58px;
+      align-items: center;
+      margin-top: 36px;
+    }
+    .loop-line {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(247,244,236,.72);
+      font-size: 18px;
+    }
+    .loop-line b {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .loop-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #73d6ca;
+      box-shadow: 0 0 0 7px rgba(115,214,202,.12);
+    }
+    .account {
+      padding-left: 28px;
+      border-left: 1px solid rgba(255,255,255,.18);
+      color: rgba(247,244,236,.68);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .account strong {
+      display: block;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    /* segment matrix */
+    .matrix {
+      margin-top: 34px;
+      border-top: 1px solid var(--line);
+    }
+    .matrix-head, .matrix-row {
+      display: grid;
+      grid-template-columns: 180px 420px 310px 310px;
+      column-gap: 18px;
+      align-items: center;
+    }
+    .matrix-head {
+      height: 54px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .matrix-row {
+      height: 102px;
+      border-top: 1px solid var(--line);
+    }
+    .biz {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-size: 23px;
+      font-weight: 600;
+    }
+    .swatch {
+      width: 12px;
+      height: 34px;
+      border-radius: 8px;
+      background: var(--c);
+    }
+    .bar-field {
+      position: relative;
+      height: 34px;
+      border-radius: 7px;
+      background: rgba(22,34,45,.06);
+      overflow: hidden;
+    }
+    .bar-field .fill {
+      width: var(--w);
+      height: 100%;
+      border-radius: inherit;
+      background: var(--c);
+      opacity: .88;
+    }
+    .bar-label {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .bar-label.outside {
+      left: 78px;
+      color: var(--ink);
+    }
+    .mini-measure {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      align-items: center;
+      gap: 14px;
+    }
+    .mini-measure strong {
+      font-size: 23px;
+      font-weight: 650;
+    }
+    .track {
+      height: 8px;
+      border-radius: 8px;
+      background: rgba(22,34,45,.09);
+      overflow: hidden;
+    }
+    .track i {
+      display: block;
+      width: var(--w);
+      height: 100%;
+      border-radius: inherit;
+      background: var(--c);
+    }
+    .matrix-note {
+      position: absolute;
+      right: 74px;
+      top: 69px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--teal);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* unit economics */
+    .three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      margin-top: 38px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .unit {
+      position: relative;
+      min-height: 510px;
+      padding: 30px 34px 26px;
+    }
+    .unit + .unit { border-left: 1px solid var(--line); }
+    .unit-tag {
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+    .unit h2 {
+      margin: 8px 0 5px;
+      font-size: 28px;
+      font-weight: 650;
+    }
+    .unit-lead {
+      min-height: 54px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+    .zero-chart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+      height: 235px;
+      padding-top: 18px;
+      border-bottom: 1px solid #bcb8ae;
+    }
+    .vbar-wrap {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 86px;
+      height: 182px;
+    }
+    .vbar {
+      width: 58px;
+      height: var(--h);
+      border-radius: 8px 8px 2px 2px;
+      background: var(--c);
+    }
+    .vbar.negative {
+      position: absolute;
+      top: 182px;
+      border-radius: 2px 2px 8px 8px;
+    }
+    .vnum {
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: 650;
+    }
+    .vlabel {
+      position: absolute;
+      top: 199px;
+      width: 120px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 26px;
+    }
+    .metric-row div { width: 31%; }
+    .metric-row strong {
+      display: block;
+      color: var(--ink);
+      font-size: 25px;
+      font-weight: 650;
+    }
+    .metric-row span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .donut {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      margin: 25px auto 18px;
+      border-radius: 50%;
+      background: conic-gradient(var(--orange) 0 61.1%, #dfdcd4 61.1% 100%);
+    }
+    .donut::after {
+      content: "";
+      position: absolute;
+      inset: 35px;
+      border-radius: 50%;
+      background: var(--paper);
+    }
+    .donut-center {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .donut-center strong {
+      font-size: 33px;
+      font-weight: 650;
+    }
+    .donut-center span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .line-box {
+      margin-top: 26px;
+    }
+    .cagr {
+      display: inline-flex;
+      margin-top: 12px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      color: #176346;
+      background: var(--soft-green);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    /* moat */
+    .moat-grid {
+      display: grid;
+      grid-template-columns: 620px 1fr;
+      gap: 76px;
+      margin-top: 32px;
+    }
+    .flywheel {
+      position: relative;
+      height: 510px;
+    }
+    .flywheel svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .fly-core {
+      position: absolute;
+      left: 218px;
+      top: 176px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 184px;
+      height: 150px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--dark);
+      box-shadow: 0 15px 40px rgba(23,49,76,.17);
+      text-align: center;
+    }
+    .fly-core strong {
+      font-size: 26px;
+      font-weight: 650;
+    }
+    .fly-core span {
+      margin-top: 4px;
+      color: rgba(255,255,255,.65);
+      font-size: 14px;
+    }
+    .fly-item {
+      position: absolute;
+      width: 178px;
+    }
+    .fly-item b {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 23px;
+      font-weight: 650;
+    }
+    .fly-item span {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .fly-item.a { left: 40px; top: 60px; }
+    .fly-item.b { right: 30px; top: 60px; }
+    .fly-item.c { right: 30px; bottom: 52px; }
+    .fly-item.d { left: 40px; bottom: 52px; }
+    .moat-metrics {
+      border-top: 1px solid var(--line);
+    }
+    .moat-metric {
+      display: grid;
+      grid-template-columns: 155px 1fr;
+      gap: 24px;
+      padding: 29px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .moat-metric strong {
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 650;
+      color: var(--blue);
+    }
+    .moat-metric b {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .moat-metric p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .moat-foot {
+      margin-top: 25px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* risks */
+    .risk-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr 1fr;
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .risk-panel {
+      min-height: 500px;
+      padding: 28px 28px 24px;
+      border-top: 4px solid var(--c);
+      background: rgba(255,255,255,.38);
+    }
+    .risk-index {
+      color: var(--c);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .1em;
+    }
+    .risk-panel h2 {
+      margin: 8px 0 8px;
+      font-size: 27px;
+      font-weight: 650;
+    }
+    .risk-panel > p {
+      min-height: 52px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .margin-bars {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      height: 230px;
+      margin-top: 25px;
+      padding: 0 8px 0;
+      border-bottom: 1px solid #bbb6ab;
+    }
+    .margin-bar {
+      position: relative;
+      width: 72px;
+      height: var(--h);
+      border-radius: 8px 8px 2px 2px;
+      background: var(--c);
+    }
+    .margin-bar strong {
+      position: absolute;
+      top: -34px;
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 650;
+    }
+    .margin-bar span {
+      position: absolute;
+      top: calc(100% + 11px);
+      left: 50%;
+      width: 105px;
+      transform: translateX(-50%);
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+    .panel-note {
+      margin-top: 58px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .cash-bridge {
+      margin-top: 33px;
+    }
+    .cash-row {
+      display: grid;
+      grid-template-columns: 120px 1fr 64px;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .cash-row label {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .cash-row strong {
+      text-align: right;
+      font-size: 18px;
+      font-weight: 650;
+    }
+    .cash-track {
+      height: 26px;
+      background: rgba(22,34,45,.07);
+    }
+    .cash-track i {
+      display: block;
+      width: var(--w);
+      height: 100%;
+      background: var(--c);
+    }
+    .capacity {
+      position: relative;
+      width: 190px;
+      height: 190px;
+      margin: 27px auto 18px;
+      border-radius: 50%;
+      background: conic-gradient(var(--purple) 0 76.78%, #ddd9d0 76.78% 100%);
+    }
+    .capacity::after {
+      content: "";
+      position: absolute;
+      inset: 27px;
+      border-radius: 50%;
+      background: #f8f6f0;
+    }
+    .capacity-label {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .capacity-label strong {
+      font-size: 31px;
+      font-weight: 650;
+    }
+    .capacity-label span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .depr {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      font-size: 16px;
+    }
+    .depr strong {
+      color: var(--purple);
+      font-size: 21px;
+      font-weight: 650;
+    }
+
+    /* funding */
+    .fund-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr 1fr;
+      gap: 44px;
+      margin-top: 36px;
+    }
+    .fund-col + .fund-col {
+      padding-left: 42px;
+      border-left: 1px solid var(--line);
+    }
+    .fund-col h2 {
+      margin: 0 0 8px;
+      font-size: 25px;
+      font-weight: 650;
+    }
+    .fund-col > p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .stack {
+      display: flex;
+      width: 100%;
+      height: 44px;
+      margin: 28px 0 23px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .stack i { height: 100%; background: var(--c); }
+    .fund-item {
+      display: grid;
+      grid-template-columns: 14px 1fr 74px;
+      gap: 12px;
+      align-items: center;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+    .fund-item i {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      background: var(--c);
+    }
+    .fund-item strong {
+      text-align: right;
+      font-weight: 650;
+    }
+    .threshold {
+      margin-top: 42px;
+    }
+    .threshold-row {
+      margin-bottom: 31px;
+    }
+    .threshold-row header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 9px;
+    }
+    .threshold-row header span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .threshold-row header strong {
+      font-size: 25px;
+      font-weight: 650;
+    }
+    .threshold-track {
+      height: 30px;
+      background: rgba(22,34,45,.07);
+    }
+    .threshold-track i {
+      display: block;
+      width: var(--w);
+      height: 100%;
+      background: var(--c);
+    }
+    .threshold-note {
+      margin-top: 35px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--orange);
+      background: var(--soft-orange);
+      color: #60452e;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    .watch {
+      margin-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .watch-row {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 15px;
+      align-items: center;
+      min-height: 72px;
+      border-bottom: 1px solid var(--line);
+    }
+    .watch-row b {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--dark);
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .watch-row span {
+      font-size: 17px;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <section class="page dark" data-name="business-loop">
+    <div class="kicker">业务地图</div>
+    <h1>从设计文件，到一块能工作的样机</h1>
+    <div class="sub">嘉立创把原本分散在多家供应商手里的环节，接进同一条在线工作流。</div>
+
+    <div class="workflow">
+      <div class="step">
+        <div class="step-no">01</div>
+        <h2>EDA 设计</h2>
+        <p>画原理图、做 PCB 布线，设计数据由此进入平台。</p>
+      </div>
+      <div class="step">
+        <div class="step-no">02</div>
+        <h2>PCB 制造</h2>
+        <p>在线报价、工程审核、拼板排产，最快 12 小时出货。</p>
+      </div>
+      <div class="step">
+        <div class="step-no">03</div>
+        <h2>元器件配单</h2>
+        <p>BOM 匹配现货库存，减少拆单采购和等待时间。</p>
+      </div>
+      <div class="step">
+        <div class="step-no">04</div>
+        <h2>PCBA 装联</h2>
+        <p>钢网、备料和贴片继续衔接，最快 15 小时交付。</p>
+      </div>
+      <div class="step">
+        <div class="step-no">05</div>
+        <h2>机械结构件</h2>
+        <p>3D 打印、CNC 和工业零部件，补齐样机外形。</p>
+      </div>
+    </div>
+
+    <div class="loop-bottom">
+      <div class="loop-line">
+        <span class="loop-dot"></span>
+        <b>订单越密，拼板与排产越高效</b>
+        <span>→ 更快交付 → 更多复购</span>
+      </div>
+      <div class="account">
+        <strong>一个账号，接住五段需求</strong>
+        嘉立创的价值不只是一块板，而是缩短硬件研发的等待时间。
+      </div>
+    </div>
+    <div class="source">资料：嘉立创招股说明书</div>
+  </section>
+
+  <section class="page" data-name="segment-overview">
+    <div class="kicker">业务结构 · 2025</div>
+    <h1>收入靠 PCB 和元器件，增量看 PCBA</h1>
+    <div class="sub">四块业务体量接近百亿元，但增长速度和赚钱能力并不相同。</div>
+    <div class="matrix-note">PCBA：增速与毛利率双高</div>
+
+    <div class="matrix">
+      <div class="matrix-head">
+        <div>业务</div>
+        <div>收入 / 主营收入占比</div>
+        <div>同比增长</div>
+        <div>毛利率</div>
+      </div>
+      <div class="matrix-row" style="--c:var(--blue)">
+        <div class="biz"><i class="swatch"></i>PCB</div>
+        <div class="bar-field"><div class="fill" style="--w:97.1%"></div><span class="bar-label">38.84 亿元 · 39.31%</span></div>
+        <div class="mini-measure"><strong>15.55%</strong><div class="track"><i style="--w:19.5%"></i></div></div>
+        <div class="mini-measure"><strong>28.09%</strong><div class="track"><i style="--w:70.2%"></i></div></div>
+      </div>
+      <div class="matrix-row" style="--c:var(--orange)">
+        <div class="biz"><i class="swatch"></i>元器件</div>
+        <div class="bar-field"><div class="fill" style="--w:91.3%"></div><span class="bar-label">36.51 亿元 · 36.96%</span></div>
+        <div class="mini-measure"><strong>29.39%</strong><div class="track"><i style="--w:36.8%"></i></div></div>
+        <div class="mini-measure"><strong>19.95%</strong><div class="track"><i style="--w:49.9%"></i></div></div>
+      </div>
+      <div class="matrix-row" style="--c:var(--teal)">
+        <div class="biz"><i class="swatch"></i>PCBA</div>
+        <div class="bar-field"><div class="fill" style="--w:44.7%"></div><span class="bar-label">17.89 亿元 · 18.11%</span></div>
+        <div class="mini-measure"><strong>49.68%</strong><div class="track"><i style="--w:62.1%"></i></div></div>
+        <div class="mini-measure"><strong>38.64%</strong><div class="track"><i style="--w:96.6%"></i></div></div>
+      </div>
+      <div class="matrix-row" style="--c:var(--rose)">
+        <div class="biz"><i class="swatch"></i>其他主营</div>
+        <div class="bar-field"><div class="fill" style="--w:13.9%"></div><span class="bar-label outside">5.56 亿元 · 5.63%</span></div>
+        <div class="mini-measure"><strong>77.80%</strong><div class="track"><i style="--w:97.3%"></i></div></div>
+        <div class="mini-measure"><strong>8.14%</strong><div class="track"><i style="--w:20.4%"></i></div></div>
+      </div>
+    </div>
+    <div class="source">资料：嘉立创招股说明书；占比为主营业务收入口径</div>
+  </section>
+
+  <section class="page" data-name="unit-economics">
+    <div class="kicker">业务经济性 · 2025</div>
+    <h1>同一条硬件链路，三种不同的赚钱方式</h1>
+    <div class="sub">PCB 靠小订单溢价，商城靠库存换速度，PCBA 靠交叉销售放大利润。</div>
+
+    <div class="three">
+      <div class="unit">
+        <div class="unit-tag">PCB</div>
+        <h2>样板、小批量最赚钱</h2>
+        <div class="unit-lead">大单带来收入，小单贡献定价权。</div>
+        <div class="zero-chart">
+          <div class="vbar-wrap">
+            <div class="vnum">36.27%</div>
+            <div class="vbar" style="--h:150px;--c:var(--blue)"></div>
+            <div class="vlabel">样板 / 小批量<br>收入占比 75.57%</div>
+          </div>
+          <div class="vbar-wrap">
+            <div class="vnum">2.79%</div>
+            <div class="vbar" style="--h:12px;--c:var(--teal)"></div>
+            <div class="vlabel">中大批量<br>收入占比 24.43%</div>
+          </div>
+          <div class="vbar-wrap">
+            <div class="vnum">−6.71%</div>
+            <div class="vbar negative" style="--h:28px;--c:var(--rose)"></div>
+            <div class="vlabel">线下中大批量<br>毛利率为负</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit">
+        <div class="unit-tag" style="color:var(--orange)">元器件商城</div>
+        <h2>现货越全，交付越快</h2>
+        <div class="unit-lead">客户体验来自库存，周期风险也藏在库存里。</div>
+        <div class="donut">
+          <div class="donut-center"><strong>61.1%</strong><span>收入来自现货</span></div>
+        </div>
+        <div class="metric-row">
+          <div><strong>76 万+</strong><span>现货 SKU</span></div>
+          <div><strong>1.4 万+</strong><span>覆盖品牌</span></div>
+          <div><strong>430 万</strong><span>年订单</span></div>
+        </div>
+      </div>
+
+      <div class="unit">
+        <div class="unit-tag" style="color:var(--teal)">PCBA</div>
+        <h2>最快的利润增长点</h2>
+        <div class="unit-lead">PCB 客户继续下单，省去再次获客。</div>
+        <div class="line-box">
+          <svg viewBox="0 0 390 250" width="100%" height="250" aria-label="PCBA 收入增长折线图">
+            <line x1="36" y1="206" x2="365" y2="206" stroke="#bbb6ab" stroke-width="1"/>
+            <line x1="36" y1="42" x2="36" y2="206" stroke="#ddd8ce" stroke-width="1"/>
+            <path d="M56,176 L194,126 L342,55" fill="none" stroke="#168b83" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="56" cy="176" r="8" fill="#f6f3ec" stroke="#168b83" stroke-width="5"/>
+            <circle cx="194" cy="126" r="8" fill="#f6f3ec" stroke="#168b83" stroke-width="5"/>
+            <circle cx="342" cy="55" r="8" fill="#f6f3ec" stroke="#168b83" stroke-width="5"/>
+            <text x="56" y="155" text-anchor="middle" font-size="20" font-weight="600" fill="#16222d">7.69</text>
+            <text x="194" y="105" text-anchor="middle" font-size="20" font-weight="600" fill="#16222d">11.95</text>
+            <text x="342" y="34" text-anchor="middle" font-size="20" font-weight="600" fill="#16222d">17.89</text>
+            <text x="56" y="235" text-anchor="middle" font-size="15" fill="#6f756f">2023</text>
+            <text x="194" y="235" text-anchor="middle" font-size="15" fill="#6f756f">2024</text>
+            <text x="342" y="235" text-anchor="middle" font-size="15" fill="#6f756f">2025</text>
+          </svg>
+        </div>
+        <div class="cagr">两年 CAGR 约 52.5% · 2025 收入 17.89 亿元</div>
+      </div>
+    </div>
+    <div class="source">资料：嘉立创招股说明书</div>
+  </section>
+
+  <section class="page" data-name="moat">
+    <div class="kicker">竞争力</div>
+    <h1>护城河不是单点技术，而是一串小效率叠加</h1>
+    <div class="sub">长尾订单、自动排产、先款后货和分散客群，共同构成不容易速成的系统能力。</div>
+
+    <div class="moat-grid">
+      <div class="flywheel">
+        <svg viewBox="0 0 620 510" aria-hidden="true">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L9,3 z" fill="#168b83"/>
+            </marker>
+          </defs>
+          <path d="M190,125 C310,30 470,92 500,205 C530,320 430,438 305,430 C168,422 92,296 135,185" fill="none" stroke="#d8d4c9" stroke-width="26" stroke-linecap="round"/>
+          <path d="M190,125 C310,30 470,92 500,205 C530,320 430,438 305,430 C168,422 92,296 135,185" fill="none" stroke="#168b83" stroke-width="5" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+        </svg>
+        <div class="fly-core"><strong>规模飞轮</strong><span>订单数据 × 制造调度</span></div>
+        <div class="fly-item a"><b>更多用户</b><span>工程师与研发团队持续进入</span></div>
+        <div class="fly-item b"><b>更多订单</b><span>长尾需求汇成密集订单池</span></div>
+        <div class="fly-item c"><b>更快交付</b><span>自动审单、排产和仓储协同</span></div>
+        <div class="fly-item d"><b>更高效率</b><span>拼板、材料和设备利用改善</span></div>
+      </div>
+
+      <div>
+        <div class="moat-metrics">
+          <div class="moat-metric">
+            <strong>1.16%</strong>
+            <div><b>前五大客户收入占比</b><p>客户足够分散，单一大客户很难左右定价和账期。</p></div>
+          </div>
+          <div class="moat-metric">
+            <strong style="color:var(--teal)">15.72%</strong>
+            <div><b>前五大供应商采购占比</b><p>采购渠道相对分散，供应链依赖度不集中在少数厂商。</p></div>
+          </div>
+          <div class="moat-metric">
+            <strong style="color:var(--green)">1.46×</strong>
+            <div><b>经营现金流 / 归母净利润</b><p>线上订单多为先款后货，利润转化成现金的能力较强。</p></div>
+          </div>
+        </div>
+        <div class="moat-foot">真正难复制的不是某个页面或算法，而是订单、工程处理、工厂、仓储和交付网络长期磨合后的整体效率。</div>
+      </div>
+    </div>
+    <div class="source">资料：嘉立创招股说明书；2025 年口径</div>
+  </section>
+
+  <section class="page" data-name="risks">
+    <div class="kicker">风险拆解 · 2025</div>
+    <h1>现金很好，扩张并不轻</h1>
+    <div class="sub">需要同时看清毛利率口径、资本开支，以及新产能投产后的折旧压力。</div>
+
+    <div class="risk-grid">
+      <div class="risk-panel" style="--c:var(--orange)">
+        <div class="risk-index">01 · 毛利率口径</div>
+        <h2>综合毛利率被废料抬高</h2>
+        <p>主营业务的赚钱能力，应先看 25.87%，而不是只看综合口径。</p>
+        <div class="margin-bars">
+          <div class="margin-bar" style="--h:64px;--c:var(--blue)"><strong>25.87%</strong><span>主营业务</span></div>
+          <div class="margin-bar" style="--h:70px;--c:var(--green)"><strong>28.13%</strong><span>综合毛利率</span></div>
+          <div class="margin-bar" style="--h:216px;--c:var(--purple)"><strong>91.70%</strong><span>其他业务</span></div>
+        </div>
+        <div class="panel-note">其他业务主要是含铜废料、蚀刻废液和边角料销售，贡献全部营业毛利约 11.19%。</div>
+      </div>
+
+      <div class="risk-panel" style="--c:var(--blue)">
+        <div class="risk-index">02 · 资本开支</div>
+        <h2>19.04 亿元现金流，先花掉 13.95 亿元</h2>
+        <p>经营现金流强，但厂房、设备和长期资产仍会大量消耗现金。</p>
+        <div class="cash-bridge">
+          <div class="cash-row">
+            <label>经营现金流</label>
+            <div class="cash-track"><i style="--w:100%;--c:var(--blue)"></i></div>
+            <strong>19.04</strong>
+          </div>
+          <div class="cash-row">
+            <label>资本开支</label>
+            <div class="cash-track"><i style="--w:73.3%;--c:var(--purple)"></i></div>
+            <strong>13.95</strong>
+          </div>
+          <div class="cash-row">
+            <label>粗略结余</label>
+            <div class="cash-track"><i style="--w:26.7%;--c:var(--green)"></i></div>
+            <strong>5.09</strong>
+          </div>
+        </div>
+        <div class="panel-note" style="margin-top:70px">单位：亿元。这个简单减法不是严格自由现金流，但能说明嘉立创仍是重资产扩张企业。</div>
+      </div>
+
+      <div class="risk-panel" style="--c:var(--purple)">
+        <div class="risk-index">03 · 扩产兑现</div>
+        <h2>利润是预测，折旧更确定</h2>
+        <p>利用率尚未满载时继续扩产，需要验证新增设备是否匹配订单结构。</p>
+        <div class="capacity">
+          <div class="capacity-label"><strong>76.78%</strong><span>PCB 产能利用率</span></div>
+        </div>
+        <div class="depr"><span>最高新增折旧摊销</span><strong>3.18 亿元 / 年</strong></div>
+        <div class="panel-note" style="margin-top:18px">项目测算的年新增净利润不低于 5.29 亿元，但需求、爬坡速度和良率仍要上市后验证。</div>
+      </div>
+    </div>
+    <div class="source">资料：嘉立创招股说明书；资本开支为购建固定资产、无形资产和其他长期资产支付的现金</div>
+  </section>
+
+  <section class="page" data-name="funding-and-watchlist">
+    <div class="kicker">募投与跟踪</div>
+    <h1>42 亿元投向哪里，上市后就看哪里</h1>
+    <div class="sub">资金主要押注高多层 PCB 与 PCBA；产能爬坡和现金回报决定这轮扩张的成色。</div>
+
+    <div class="fund-grid">
+      <div class="fund-col">
+        <h2>计划募资 42 亿元</h2>
+        <p>约 56% 投向高多层 PCB 与 PCBA，增长主线非常清晰。</p>
+        <div class="stack">
+          <i style="width:28.57%;--c:var(--blue)"></i>
+          <i style="width:27.38%;--c:var(--teal)"></i>
+          <i style="width:17.62%;--c:var(--orange)"></i>
+          <i style="width:15%;--c:var(--rose)"></i>
+          <i style="width:11.43%;--c:var(--purple)"></i>
+        </div>
+        <div class="fund-item" style="--c:var(--blue)"><i></i><span>高多层 PCB</span><strong>12.0 亿</strong></div>
+        <div class="fund-item" style="--c:var(--teal)"><i></i><span>PCBA 产线</span><strong>11.5 亿</strong></div>
+        <div class="fund-item" style="--c:var(--orange)"><i></i><span>元器件中心</span><strong>7.4 亿</strong></div>
+        <div class="fund-item" style="--c:var(--rose)"><i></i><span>机械产线</span><strong>6.3 亿</strong></div>
+        <div class="fund-item" style="--c:var(--purple)"><i></i><span>研发信息化</span><strong>4.8 亿</strong></div>
+      </div>
+
+      <div class="fund-col">
+        <h2>扩产后的利润门槛</h2>
+        <p>收益来自项目测算，成本会随资产投产进入报表。</p>
+        <div class="threshold">
+          <div class="threshold-row">
+            <header><span>测算新增净利润</span><strong>≥ 5.29 亿</strong></header>
+            <div class="threshold-track"><i style="--w:100%;--c:var(--green)"></i></div>
+          </div>
+          <div class="threshold-row">
+            <header><span>最高新增折旧摊销</span><strong>≤ 3.18 亿</strong></header>
+            <div class="threshold-track"><i style="--w:60.1%;--c:var(--purple)"></i></div>
+          </div>
+        </div>
+        <div class="threshold-note">折旧先来、利润后到，是扩产期最需要防的时间差。</div>
+      </div>
+
+      <div class="fund-col">
+        <h2>上市后五项观察</h2>
+        <p>比首日涨跌更能决定长期价值。</p>
+        <div class="watch">
+          <div class="watch-row"><b>01</b><span>小批量 PCB 毛利率</span></div>
+          <div class="watch-row"><b>02</b><span>PCBA 收入与客户转化</span></div>
+          <div class="watch-row"><b>03</b><span>元器件库存与减值</span></div>
+          <div class="watch-row"><b>04</b><span>资本开支后的现金结余</span></div>
+          <div class="watch-row"><b>05</b><span>新旧产能利用率</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="source">资料：嘉立创招股说明书；项目收益为公司测算，并非业绩承诺</div>
+  </section>
+</body>
+</html>
