@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1220" viewBox="0 0 1400 1220">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,&quot;PingFang SC&quot;,&quot;Hiragino Sans GB&quot;,&quot;Microsoft YaHei&quot;,Arial,sans-serif;fill:#111827}.axis{stroke:#374151;stroke-width:1}.grid{stroke:#e5e7eb;stroke-width:1}.muted{fill:#6b7280}.small{font-size:18px}.tick{font-size:17px;fill:#4b5563}.title{font-size:33px;font-weight:700}.subtitle{font-size:20px;fill:#6b7280}.panel-title{font-size:25px;font-weight:700}.legend{font-size:18px}</style>
+<text x="120" y="58" class="title">513120 / 515120 / 512010 近三年规模变化</text>
+<text x="120" y="91" class="subtitle">季度数据：期末总份额（亿份）与期末净资产规模（亿元）；区间 2023Q1 至 2026Q1</text>
+<text x="120" y="121" class="subtitle">注：“市值”按基金净资产规模（AUM）展示，不是成分股总市值。</text>
+<line x1="120" y1="158" x2="158" y2="158" stroke="#2563eb" stroke-width="4"/>
+<circle cx="139" cy="158" r="5" fill="#2563eb"/>
+<text x="170" y="164" class="legend">513120 港股创新药ETF</text>
+<line x1="435" y1="158" x2="473" y2="158" stroke="#f97316" stroke-width="4"/>
+<circle cx="454" cy="158" r="5" fill="#f97316"/>
+<text x="485" y="164" class="legend">515120 A股创新药ETF</text>
+<line x1="750" y1="158" x2="788" y2="158" stroke="#16a34a" stroke-width="4"/>
+<circle cx="769" cy="158" r="5" fill="#16a34a"/>
+<text x="800" y="164" class="legend">512010 沪深300医药ETF</text>
+<text x="120" y="183" class="panel-title">期末总份额变化</text>
+<line x1="120" y1="540.00" x2="1270" y2="540.00" class="grid"/>
+<text x="105" y="546.00" text-anchor="end" class="tick">0</text>
+<line x1="120" y1="492.14" x2="1270" y2="492.14" class="grid"/>
+<text x="105" y="498.14" text-anchor="end" class="tick">100</text>
+<line x1="120" y1="444.29" x2="1270" y2="444.29" class="grid"/>
+<text x="105" y="450.29" text-anchor="end" class="tick">200</text>
+<line x1="120" y1="396.43" x2="1270" y2="396.43" class="grid"/>
+<text x="105" y="402.43" text-anchor="end" class="tick">300</text>
+<line x1="120" y1="348.57" x2="1270" y2="348.57" class="grid"/>
+<text x="105" y="354.57" text-anchor="end" class="tick">400</text>
+<line x1="120" y1="300.71" x2="1270" y2="300.71" class="grid"/>
+<text x="105" y="306.71" text-anchor="end" class="tick">500</text>
+<line x1="120" y1="252.86" x2="1270" y2="252.86" class="grid"/>
+<text x="105" y="258.86" text-anchor="end" class="tick">600</text>
+<line x1="120" y1="205.00" x2="1270" y2="205.00" class="grid"/>
+<text x="105" y="211.00" text-anchor="end" class="tick">700</text>
+<line x1="120" y1="205" x2="120" y2="540" class="axis"/>
+<line x1="120" y1="540" x2="1270" y2="540" class="axis"/>
+<text x="35" y="372.5" transform="rotate(-90 35,372.5)" text-anchor="middle" class="small muted">亿份</text>
+<line x1="120.00" y1="540" x2="120.00" y2="546" class="axis"/>
+<text x="120.00" y="568" text-anchor="middle" class="tick">2023Q1</text>
+<line x1="215.83" y1="540" x2="215.83" y2="546" class="axis"/>
+<line x1="311.67" y1="540" x2="311.67" y2="546" class="axis"/>
+<text x="311.67" y="568" text-anchor="middle" class="tick">2023Q3</text>
+<line x1="407.50" y1="540" x2="407.50" y2="546" class="axis"/>
+<line x1="503.33" y1="540" x2="503.33" y2="546" class="axis"/>
+<text x="503.33" y="568" text-anchor="middle" class="tick">2024Q1</text>
+<line x1="599.17" y1="540" x2="599.17" y2="546" class="axis"/>
+<line x1="695.00" y1="540" x2="695.00" y2="546" class="axis"/>
+<text x="695.00" y="568" text-anchor="middle" class="tick">2024Q3</text>
+<line x1="790.83" y1="540" x2="790.83" y2="546" class="axis"/>
+<line x1="886.67" y1="540" x2="886.67" y2="546" class="axis"/>
+<text x="886.67" y="568" text-anchor="middle" class="tick">2025Q1</text>
+<line x1="982.50" y1="540" x2="982.50" y2="546" class="axis"/>
+<line x1="1078.33" y1="540" x2="1078.33" y2="546" class="axis"/>
+<text x="1078.33" y="568" text-anchor="middle" class="tick">2025Q3</text>
+<line x1="1174.17" y1="540" x2="1174.17" y2="546" class="axis"/>
+<line x1="1270.00" y1="540" x2="1270.00" y2="546" class="axis"/>
+<text x="1270.00" y="568" text-anchor="middle" class="tick">2026Q1</text>
+<path d="M 120.00,537.20 L 215.83,525.00 L 311.67,515.39 L 407.50,499.38 L 503.33,496.38 L 599.17,500.24 L 695.00,499.46 L 790.83,487.74 L 886.67,485.51 L 982.50,483.30 L 1078.33,462.38 L 1174.17,446.80 L 1270.00,442.35" fill="none" stroke="#2563eb" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120.00" cy="537.20" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="215.83" cy="525.00" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="311.67" cy="515.39" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="407.50" cy="499.38" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="503.33" cy="496.38" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="599.17" cy="500.24" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="695.00" cy="499.46" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="790.83" cy="487.74" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="886.67" cy="485.51" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="982.50" cy="483.30" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="1078.33" cy="462.38" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="1174.17" cy="446.80" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="1270.00" cy="442.35" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<path d="M 120.00,524.33 L 215.83,514.84 L 311.67,511.36 L 407.50,508.14 L 503.33,510.69 L 599.17,511.36 L 695.00,510.65 L 790.83,507.50 L 886.67,505.90 L 982.50,512.70 L 1078.33,501.60 L 1174.17,485.09 L 1270.00,471.26" fill="none" stroke="#f97316" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120.00" cy="524.33" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="215.83" cy="514.84" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="311.67" cy="511.36" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="407.50" cy="508.14" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="503.33" cy="510.69" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="599.17" cy="511.36" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="695.00" cy="510.65" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="790.83" cy="507.50" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="886.67" cy="505.90" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="982.50" cy="512.70" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="1078.33" cy="501.60" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="1174.17" cy="485.09" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="1270.00" cy="471.26" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<path d="M 120.00,391.85 L 215.83,330.78 L 311.67,310.43 L 407.50,302.36 L 503.33,311.55 L 599.17,289.24 L 695.00,281.60 L 790.83,232.91 L 886.67,245.16 L 982.50,272.26 L 1078.33,336.04 L 1174.17,325.43 L 1270.00,313.38" fill="none" stroke="#16a34a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120.00" cy="391.85" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="215.83" cy="330.78" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="311.67" cy="310.43" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="407.50" cy="302.36" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="503.33" cy="311.55" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="599.17" cy="289.24" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="695.00" cy="281.60" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="790.83" cy="232.91" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="886.67" cy="245.16" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="982.50" cy="272.26" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="1078.33" cy="336.04" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="1174.17" cy="325.43" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="1270.00" cy="313.38" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<text x="120" y="683" class="panel-title">期末净资产规模变化</text>
+<line x1="120" y1="1040.00" x2="1270" y2="1040.00" class="grid"/>
+<text x="105" y="1046.00" text-anchor="end" class="tick">0</text>
+<line x1="120" y1="973.00" x2="1270" y2="973.00" class="grid"/>
+<text x="105" y="979.00" text-anchor="end" class="tick">50</text>
+<line x1="120" y1="906.00" x2="1270" y2="906.00" class="grid"/>
+<text x="105" y="912.00" text-anchor="end" class="tick">100</text>
+<line x1="120" y1="839.00" x2="1270" y2="839.00" class="grid"/>
+<text x="105" y="845.00" text-anchor="end" class="tick">150</text>
+<line x1="120" y1="772.00" x2="1270" y2="772.00" class="grid"/>
+<text x="105" y="778.00" text-anchor="end" class="tick">200</text>
+<line x1="120" y1="705.00" x2="1270" y2="705.00" class="grid"/>
+<text x="105" y="711.00" text-anchor="end" class="tick">250</text>
+<line x1="120" y1="705" x2="120" y2="1040" class="axis"/>
+<line x1="120" y1="1040" x2="1270" y2="1040" class="axis"/>
+<text x="35" y="872.5" transform="rotate(-90 35,872.5)" text-anchor="middle" class="small muted">亿元</text>
+<line x1="120.00" y1="1040" x2="120.00" y2="1046" class="axis"/>
+<text x="120.00" y="1068" text-anchor="middle" class="tick">2023Q1</text>
+<line x1="215.83" y1="1040" x2="215.83" y2="1046" class="axis"/>
+<line x1="311.67" y1="1040" x2="311.67" y2="1046" class="axis"/>
+<text x="311.67" y="1068" text-anchor="middle" class="tick">2023Q3</text>
+<line x1="407.50" y1="1040" x2="407.50" y2="1046" class="axis"/>
+<line x1="503.33" y1="1040" x2="503.33" y2="1046" class="axis"/>
+<text x="503.33" y="1068" text-anchor="middle" class="tick">2024Q1</text>
+<line x1="599.17" y1="1040" x2="599.17" y2="1046" class="axis"/>
+<line x1="695.00" y1="1040" x2="695.00" y2="1046" class="axis"/>
+<text x="695.00" y="1068" text-anchor="middle" class="tick">2024Q3</text>
+<line x1="790.83" y1="1040" x2="790.83" y2="1046" class="axis"/>
+<line x1="886.67" y1="1040" x2="886.67" y2="1046" class="axis"/>
+<text x="886.67" y="1068" text-anchor="middle" class="tick">2025Q1</text>
+<line x1="982.50" y1="1040" x2="982.50" y2="1046" class="axis"/>
+<line x1="1078.33" y1="1040" x2="1078.33" y2="1046" class="axis"/>
+<text x="1078.33" y="1068" text-anchor="middle" class="tick">2025Q3</text>
+<line x1="1174.17" y1="1040" x2="1174.17" y2="1046" class="axis"/>
+<line x1="1270.00" y1="1040" x2="1270.00" y2="1046" class="axis"/>
+<text x="1270.00" y="1068" text-anchor="middle" class="tick">2026Q1</text>
+<path d="M 120.00,1033.13 L 215.83,1006.71 L 311.67,985.51 L 407.50,949.14 L 503.33,962.84 L 599.17,973.60 L 695.00,948.71 L 790.83,934.47 L 886.67,899.88 L 982.50,860.12 L 1078.33,706.49 L 1174.17,726.39 L 1270.00,707.04" fill="none" stroke="#2563eb" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120.00" cy="1033.13" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="215.83" cy="1006.71" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="311.67" cy="985.51" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="407.50" cy="949.14" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="503.33" cy="962.84" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="599.17" cy="973.60" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="695.00" cy="948.71" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="790.83" cy="934.47" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="886.67" cy="899.88" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="982.50" cy="860.12" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="1078.33" cy="706.49" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="1174.17" cy="726.39" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<circle cx="1270.00" cy="707.04" r="4.4" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+<path d="M 120.00,1010.08 L 215.83,996.90 L 311.67,989.46 L 407.50,984.96 L 503.33,997.37 L 599.17,1003.33 L 695.00,993.51 L 790.83,992.66 L 886.67,987.28 L 982.50,994.77 L 1078.33,961.91 L 1174.17,944.05 L 1270.00,921.73" fill="none" stroke="#f97316" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120.00" cy="1010.08" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="215.83" cy="996.90" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="311.67" cy="989.46" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="407.50" cy="984.96" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="503.33" cy="997.37" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="599.17" cy="1003.33" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="695.00" cy="993.51" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="790.83" cy="992.66" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="886.67" cy="987.28" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="982.50" cy="994.77" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="1078.33" cy="961.91" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="1174.17" cy="944.05" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<circle cx="1270.00" cy="921.73" r="4.4" fill="#fff" stroke="#f97316" stroke-width="3"/>
+<path d="M 120.00,845.07 L 215.83,790.94 L 311.67,765.15 L 407.50,766.20 L 503.33,808.06 L 599.17,810.90 L 695.00,750.67 L 790.83,730.17 L 886.67,740.42 L 982.50,763.94 L 1078.33,785.57 L 1174.17,812.54 L 1270.00,809.31" fill="none" stroke="#16a34a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120.00" cy="845.07" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="215.83" cy="790.94" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="311.67" cy="765.15" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="407.50" cy="766.20" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="503.33" cy="808.06" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="599.17" cy="810.90" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="695.00" cy="750.67" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="790.83" cy="730.17" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="886.67" cy="740.42" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="982.50" cy="763.94" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="1078.33" cy="785.57" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="1174.17" cy="812.54" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<circle cx="1270.00" cy="809.31" r="4.4" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+<text x="120" y="1155" class="subtitle">数据来源：天天基金 F10 / 东方财富 Choice。生成时间：2026-07-06。</text>
+</svg>

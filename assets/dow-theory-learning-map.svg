@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160" role="img" aria-labelledby="title desc">
+  <title id="title">道氏理论学习图谱</title>
+  <desc id="desc">道氏理论的趋势三层、牛熊三阶段、相互确认和实战流程。</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .card { fill: #ffffff; stroke: #cfd8e6; stroke-width: 3; }
+      .title { font: 800 92px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #10213f; }
+      .subtitle { font: 500 42px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #53627a; }
+      .card-title { font: 800 52px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #10213f; }
+      .label { font: 700 42px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #21324d; }
+      .small { font: 500 34px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #5c6a80; }
+      .tiny { font: 500 28px "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", Arial, sans-serif; fill: #718096; }
+      .navy { stroke: #14315f; }
+      .teal { stroke: #0f8b8d; }
+      .blue { stroke: #2563eb; }
+      .red { stroke: #d94841; }
+      .orange { stroke: #f59e0b; }
+      .axis { stroke: #d7deea; stroke-width: 3; }
+      .grid { stroke: #e7ecf4; stroke-width: 2; }
+      .flow-box { fill: #f8fbff; stroke: #b7c4d8; stroke-width: 3; }
+      .badge { fill: #10213f; }
+    </style>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#14315f"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f8b8d"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d94841"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="3840" height="2160"/>
+  <circle cx="360" cy="210" r="120" fill="#e9f5f5"/>
+  <circle cx="3480" cy="1960" r="150" fill="#eef4ff"/>
+
+  <text class="title" x="1920" y="150" text-anchor="middle">道氏理论学习图谱</text>
+  <text class="subtitle" x="1920" y="225" text-anchor="middle">精髓：用确认而非预测来识别主要趋势，趋势未被破坏前默认延续</text>
+
+  <!-- Panel 1 -->
+  <g transform="translate(150 330)">
+    <rect class="card" width="1740" height="760" rx="32"/>
+    <circle class="badge" cx="82" cy="80" r="43"/>
+    <text x="82" y="98" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">1</text>
+    <text class="card-title" x="150" y="100">趋势三层</text>
+
+    <g transform="translate(150 190)">
+      <line class="grid" x1="0" y1="430" x2="1420" y2="430"/>
+      <line class="grid" x1="0" y1="280" x2="1420" y2="280"/>
+      <line class="grid" x1="0" y1="130" x2="1420" y2="130"/>
+      <text class="label" x="0" y="75">主要趋势</text>
+      <text class="label" x="0" y="225" fill="#0f8b8d">次级趋势</text>
+      <text class="label" x="0" y="375" fill="#2563eb">短期波动</text>
+      <path d="M 330 410 C 460 270, 610 170, 770 130 C 950 90, 1110 150, 1290 60" fill="none" class="navy" stroke-width="18" stroke-linecap="round"/>
+      <path d="M 335 425 C 420 330, 500 360, 580 270 C 650 195, 740 240, 810 155 C 895 65, 1015 150, 1095 98 C 1180 45, 1260 105, 1330 65" fill="none" class="teal" stroke-width="12" stroke-linecap="round"/>
+      <path d="M 335 445 L 385 392 L 430 430 L 475 350 L 520 405 L 570 300 L 620 365 L 670 285 L 715 340 L 760 225 L 800 310 L 845 250 L 890 315 L 940 210 L 980 300 L 1035 245 L 1080 335 L 1125 220 L 1175 270 L 1220 190 L 1280 240 L 1330 170" fill="none" class="blue" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Panel 2 -->
+  <g transform="translate(1950 330)">
+    <rect class="card" width="1740" height="760" rx="32"/>
+    <circle class="badge" cx="82" cy="80" r="43"/>
+    <text x="82" y="98" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">2</text>
+    <text class="card-title" x="150" y="100">牛熊三阶段</text>
+
+    <g transform="translate(170 210)">
+      <text class="label" x="0" y="45" fill="#0f8b8d">牛市</text>
+      <line x1="180" y1="30" x2="1430" y2="30" class="teal" stroke-width="8" marker-end="url(#arrow-teal)"/>
+      <circle cx="360" cy="30" r="30" fill="#0f8b8d"/>
+      <circle cx="780" cy="30" r="30" fill="#0f8b8d"/>
+      <circle cx="1200" cy="30" r="30" fill="#0f8b8d"/>
+      <text class="label" x="300" y="115">吸筹</text>
+      <text class="label" x="680" y="115">公众参与</text>
+      <text class="label" x="1140" y="115">过热</text>
+
+      <text class="label" x="0" y="300" fill="#d94841">熊市</text>
+      <line x1="180" y1="285" x2="1430" y2="285" class="red" stroke-width="8" marker-end="url(#arrow-red)"/>
+      <circle cx="360" cy="285" r="30" fill="#d94841"/>
+      <circle cx="780" cy="285" r="30" fill="#d94841"/>
+      <circle cx="1200" cy="285" r="30" fill="#d94841"/>
+      <text class="label" x="300" y="370">派发</text>
+      <text class="label" x="720" y="370">恐慌</text>
+      <text class="label" x="1140" y="370">悲观</text>
+    </g>
+  </g>
+
+  <!-- Panel 3 -->
+  <g transform="translate(150 1160)">
+    <rect class="card" width="1740" height="760" rx="32"/>
+    <circle class="badge" cx="82" cy="80" r="43"/>
+    <text x="82" y="98" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">3</text>
+    <text class="card-title" x="150" y="100">相互确认</text>
+
+    <g transform="translate(150 170)">
+      <text class="label" x="0" y="75">工业指数</text>
+      <text class="label" x="0" y="245">运输指数</text>
+      <text class="label" x="0" y="435">成交量确认</text>
+      <line class="axis" x1="250" y1="95" x2="1460" y2="95"/>
+      <line class="axis" x1="250" y1="265" x2="1460" y2="265"/>
+      <line class="axis" x1="250" y1="500" x2="1460" y2="500"/>
+      <line x1="1010" y1="30" x2="1010" y2="520" stroke="#9aa7ba" stroke-width="4" stroke-dasharray="14 14"/>
+      <path d="M 285 120 L 385 80 L 480 115 L 590 70 L 705 105 L 815 70 L 930 95 L 1010 55 L 1135 35 L 1260 52 L 1385 28" fill="none" class="navy" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-navy)"/>
+      <path d="M 285 295 L 385 250 L 500 285 L 615 235 L 730 275 L 835 235 L 935 270 L 1010 225 L 1135 205 L 1260 220 L 1385 195" fill="none" class="teal" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)"/>
+      <g fill="#2563eb">
+        <rect x="290" y="470" width="34" height="30"/><rect x="350" y="455" width="34" height="45"/><rect x="410" y="460" width="34" height="40"/>
+        <rect x="470" y="440" width="34" height="60"/><rect x="530" y="430" width="34" height="70"/><rect x="590" y="445" width="34" height="55"/>
+        <rect x="650" y="420" width="34" height="80"/><rect x="710" y="405" width="34" height="95"/><rect x="770" y="390" width="34" height="110"/>
+        <rect x="830" y="410" width="34" height="90"/><rect x="890" y="370" width="34" height="130"/><rect x="950" y="350" width="34" height="150"/>
+        <rect x="1010" y="300" width="34" height="200"/><rect x="1070" y="280" width="34" height="220"/><rect x="1130" y="260" width="34" height="240"/>
+        <rect x="1190" y="235" width="34" height="265"/><rect x="1250" y="250" width="34" height="250"/><rect x="1310" y="220" width="34" height="280"/>
+      </g>
+      <text class="small" x="1050" y="95" fill="#14315f">双指数同步突破</text>
+    </g>
+  </g>
+
+  <!-- Panel 4 -->
+  <g transform="translate(1950 1160)">
+    <rect class="card" width="1740" height="760" rx="32"/>
+    <circle class="badge" cx="82" cy="80" r="43"/>
+    <text x="82" y="98" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">4</text>
+    <text class="card-title" x="150" y="100">实战流程</text>
+
+    <g transform="translate(140 230)">
+      <rect class="flow-box" x="0" y="0" width="330" height="230" rx="30"/>
+      <rect class="flow-box" x="400" y="0" width="330" height="230" rx="30"/>
+      <rect class="flow-box" x="800" y="0" width="330" height="230" rx="30"/>
+      <rect class="flow-box" x="1200" y="0" width="330" height="230" rx="30"/>
+      <line x1="330" y1="115" x2="390" y2="115" class="navy" stroke-width="8" marker-end="url(#arrow-navy)"/>
+      <line x1="730" y1="115" x2="790" y2="115" class="navy" stroke-width="8" marker-end="url(#arrow-navy)"/>
+      <line x1="1130" y1="115" x2="1190" y2="115" class="navy" stroke-width="8" marker-end="url(#arrow-navy)"/>
+
+      <circle cx="105" cy="88" r="48" fill="none" class="navy" stroke-width="12"/>
+      <line x1="140" y1="123" x2="180" y2="165" class="navy" stroke-width="12" stroke-linecap="round"/>
+      <path d="M 485 115 L 560 180 L 660 60" fill="none" class="teal" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 865 165 L 865 110 L 935 110 L 935 70 L 1035 70" fill="none" class="teal" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)"/>
+      <path d="M 1325 60 C 1420 60, 1460 135, 1390 190" fill="none" class="red" stroke-width="16" stroke-linecap="round" marker-end="url(#arrow-red)"/>
+
+      <text class="label" x="165" y="315" text-anchor="middle">识别高低点</text>
+      <text class="label" x="565" y="315" text-anchor="middle">等待确认</text>
+      <text class="label" x="965" y="315" text-anchor="middle">顺势交易</text>
+      <text class="label" x="1365" y="315" text-anchor="middle">反转退出</text>
+      <text class="small" x="765" y="425" text-anchor="middle">核心动作：先定义趋势，再等待证据，最后管理退出</text>
+    </g>
+  </g>
+
+  <text class="tiny" x="1920" y="2050" text-anchor="middle">教育用途，不构成投资建议；任何技术分析都需要结合风险控制、流动性和交易成本。</text>
+</svg>
