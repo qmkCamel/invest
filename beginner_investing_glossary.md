@@ -4,6 +4,8 @@
 
 [返回《投资策略与流派梳理》](investment_strategy_schools_summary_2026-07-30.md)
 
+需要查询 K 线、支撑阻力、均线、MACD、RSI、KDJ、BOLL 或 ATR 的详细用法，请阅读[《技术分析常见术语入门》](technical_analysis_glossary.md)。本文仍以财报、估值和投资基础概念为主。
+
 ## 这份术语表怎么用
 
 第一次阅读时，先掌握 PE、PB、ROE、经营现金流、自由现金流、股息率、最大回撤和再平衡。遇到不熟悉的词再回来查询，不需要一次背完。

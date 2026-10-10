@@ -1,8 +1,10 @@
 # beginner-investment-education Specification
 
 ## Purpose
-TBD - created by archiving change add-beginner-investing-guide. Update Purpose after archive.
+为零基础读者提供投资策略、财报与估值、技术分析及风险执行的中文教学资料，通过可追溯来源、虚构演示和使用边界帮助理解概念并形成可复核的学习与决策记录。
+
 ## Requirements
+
 ### Requirement: 双层科普阅读结构
 投资策略文档 SHALL 提供面向零基础读者的入门层和保留完整指标、决策规则与流程图的专业速查层，并 SHALL 在开头给出推荐阅读顺序。
 
@@ -111,3 +113,27 @@ TBD - created by archiving change add-beginner-investing-guide. Update Purpose a
 #### Scenario: 读者尝试把利率变化用于投资判断
 - **WHEN** 读者看到长期利率上涨或下降
 - **THEN** 文档引导读者继续检查公司现金流何时兑现、当前估值、盈利预期、负债和再融资需求，而不是直接得出买入或卖出结论
+
+### Requirement: 技术分析术语分类与入口
+仓库 SHALL 提供独立中文技术分析术语文档，覆盖 K 线与周期、量价、趋势与支撑阻力、常用指标、形态和风险执行；README、基础术语表及投资策略主文档 MUST 提供可解析的相对链接。
+
+#### Scenario: 读者查询技术术语
+- **GIVEN** 读者打开 README、基础术语表或策略文档
+- **WHEN** 读者查询均线、突破、MACD 或其他技术术语
+- **THEN** 读者能通过链接进入独立文档并看到分类解释与常见误区
+
+### Requirement: 技术指标口径与教学案例
+技术分析文档 MUST 解释 SMA/EMA、MACD、RSI、KDJ、BOLL、ATR 的计算对象、常见参数与使用限制，并 SHALL 提供可复算的虚构案例；文档 MUST 说明周期、复权、未收盘数据及软件计算差异。
+
+#### Scenario: 读者比较指标数值
+- **GIVEN** 读者在不同软件或周期看到不同技术指标结果
+- **WHEN** 读者查阅指标章节
+- **THEN** 文档引导核对数据口径、周期、参数和平滑方法，不把不同口径的数值直接横比
+
+### Requirement: 技术信号与风险边界
+文档 MUST 区分经验信号与确定事实，说明超买超卖、交叉、背离、突破和形态均可能失效，并 SHALL 使用虚构案例解释假突破、仓位、盈亏比、胜率与费用后的期望；参考资料 MUST 可追溯。
+
+#### Scenario: 读者看到看似有利的信号
+- **GIVEN** 读者看到金叉、超卖或放量突破
+- **WHEN** 读者阅读示例和风险说明
+- **THEN** 读者能指出信号不能保证收益，且计划止损不保证实际成交价格，案例参数不能直接作为交易建议
