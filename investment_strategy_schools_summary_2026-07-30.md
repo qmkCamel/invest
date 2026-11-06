@@ -17,7 +17,9 @@
 - 只想先建立常识：读完“四层方法地图、投资前七条底线、风险预算”即可。
 - 遇到 PE、ROE、自由现金流等陌生概念：打开[《投资小白术语与估值入门》](beginner_investing_glossary.md)。
 - 遇到 K 线、均线、MACD、RSI、支撑阻力或假突破：打开[《技术分析常见术语入门》](technical_analysis_glossary.md)，先理解计算口径与失效条件。
+- 想理解 BOS、CHoCH、FVG 或学习整张图怎么分析：阅读[市场结构与 SMC/ICT 指南](market_structure_analysis_guide.md)，再用[黄金周线截图案例](gold_weekly_market_structure_case_2026-11-03.md)练习。这些方法可用于趋势或技术交易的观察与执行，不另列为保证有效的新流派。
 - 想选一个起步方法：继续阅读“新手选择路线”和“流派适配矩阵”。
+- 想理解看跌工具、期权、期货或卖空：阅读[《期权、期货与卖空详细入门》](options_futures_short_selling_guide.md)，先分清合约风险、资金需求与退出方式，再考虑策略；券商费率见[带日期的核查记录](broker_derivatives_reference_2026-11-06.md)。
 - 已经开始投资：重点使用“完整决策案例、买入前检查清单、交易计划模板”。
 - 需要深入研究：再进入每个流派的指标表、流程图和详细信息图。
 
